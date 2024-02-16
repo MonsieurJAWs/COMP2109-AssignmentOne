@@ -6,6 +6,7 @@ html {
   font-size: 120%;
   line-height: 1.4;
   font-family: Helvetica, sans-serif;
+  margin-top: 0 !important;
 }
 
 body {
@@ -34,7 +35,7 @@ header ul {
     padding: 0;
 }
 
-header a {
+header a, footer a {
   text-decoration: none;
   color: white;
 }
@@ -75,4 +76,15 @@ footer figure img {
   padding-left: 5%;
   padding-right: 5%;
   text-align: center;
+}
+
+/* Remove pst-masthead background image */
+.post-masthead {
+  background: none !important;
+}
+
+/* Adjust featured post image */
+article img {
+  height: 100px;
+  width: auto;
 }
