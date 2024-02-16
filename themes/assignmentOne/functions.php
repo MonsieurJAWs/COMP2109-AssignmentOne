@@ -9,7 +9,7 @@ function assignmentOne_setup_theme() {
 }
 
 // need to add the action
-add_action( 'after_assignmentOne_setup_theme', 'assignmentOne_setup_theme' );
+add_action( 'after_setup_theme', 'assignmentOne_setup_theme' );
 // any mistakes here in this file will break the entire website. they need to be fixed before the site will load
 // add our featured image support for our posts
 add_theme_support( 'post-thumbnails' );
@@ -46,14 +46,19 @@ add_action( 'widgets_init', 'footerWidgets' );
 
 // custom plugin
 function assignmentOne_profile() {
+    // the args variable can be named anything you want
     $args = array(
         'label' => 'Assignment One Profile',
         'public' => true,
         'show_ui' => true,
+        // you determine whether it makes a post or a page
         'capability_type' => 'post',
+        // taxonomies can either be categories or tags
         'taxonomies' => array( 'category' ),
+        // if capability type is page, set hieratchical to true
         'hierarchical' => 'false',
         'query_var' => true,
+        // allows cusdtom icons
         'menu_icon' => 'dashicons-album',
         'supports' => array(
             'title',
