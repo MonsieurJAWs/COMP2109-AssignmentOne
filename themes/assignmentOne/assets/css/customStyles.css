@@ -83,6 +83,11 @@ footer figure img {
   background: none !important;
 }
 
+/* Remove the h1 added from WordPress*/
+.post-masthead div h1 {
+  display: none;
+}
+
 /* Adjust featured post image */
 article img {
   height: 100px;
