@@ -1,0 +1,132 @@
+/** General Styling **/
+html{
+  scroll-behavior: smooth;
+  background-color: #f8f8f8;
+}
+body{margin: 0px;}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Poppins', sans-serif;
+}
+p,a,li,td{
+  font-size: 1.2em;
+  font-family: 'Lato',sans-serif;
+  text-decoration: none;
+}
+.row{
+  margin: 0px;
+}
+/** Global Header & Footer **/
+header{
+  display: flex;
+  width: 100%;
+  height: 115px;
+  align-items: center;
+  position: fixed;
+  background-color: #f8f8f8;
+  padding: 5px;
+}
+header div{
+  width: auto;
+  height: 110px;
+  flex-grow: 1;
+}
+header div img{
+  width: auto;
+  height: 100%;
+}
+header .menu-main-container{
+  width: auto;
+  height: auto;
+}
+header .menu{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+header .menu li{
+  padding: 0px 10px;
+}
+header .menu li a{
+  color: #0e0e0e;
+}
+footer{
+  background-color: #0e0e0e;
+  padding: 2%;
+}
+.top-footer{
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+}
+.top-footer .first{
+  display: flex;
+  align-items: center;
+}
+.top-footer .second, .top-footer .fourth{
+  color: #f8f8f8;
+}
+.top-footer .second h5,
+.top-footer .fourth h5{font-size: 2.5em;}
+.top-footer .third{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f8f8f8;
+}
+.top-footer .third a{
+  color: #f8f8f8;
+}
+/** Single Post **/
+.post-masthead{
+  width: auto;
+  height: 75vh;
+  background-size: cover;
+}
+.post-masthead div{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,.7);
+}
+.post-masthead div h1{
+  font-size: 4em;
+  color: #f8f8f8;
+  text-shadow: 4px 3px 4px rgba(0,0,0,.7);
+}
+.post-list article > a > img{
+  width: 100%;
+  height: auto;
+}
+/** masthead ACF **/
+.masthead{
+  width: auto;
+  height: 100vh;
+  background-size: cover;
+}
+.masthead div{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,.7);
+}
+.masthead div h1{
+  font-size: 4em;
+  color: #f8f8f8;
+  text-shadow: 4px 3px 4px rgba(0,0,0,.7);
+}
+.home-intro{
+  padding: 5%;
+  text-align: center;
+}
+.home-intro h2{
+  font-size: 2.5em;
+}
+.custom-plugin-section img{
+  width: 100%;
+  height: auto;
+}

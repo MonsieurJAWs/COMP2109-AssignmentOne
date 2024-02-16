@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* Global styling */
+/* Set base font sizes/characteristics for the entire html document */
+html {
+  font-size: 120%;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  /* Prevent screen bounce */
+  overscroll-behavior: none;
+  background: #F1F3F4 !important;
+}
+
+/* Add a background color to the header and footer */
+.navbar, footer {
+    background-color: #4F576A;
+}
+
+/* Change the navbar link on hover colours */
+a:hover {
+  color: #05C7F2;
+}
+
+/* Adjust nav link items */
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Adjust footer logo */
+footer figure img {
+  height: 100px;
+  width: 100px;
+}
+
+/* Styling for the hero banner image on the home page */
+.p-5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1551158423-100d177bfaae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 50%;
+  margin: 5%;
+}
+
+/* Style the mission statement on the home page */
+.missionStatement {
+  margin: 10%;
+  font-size: 25px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+/* About Me page Styling */
+/* Add some padding around the h2 and paragraph */
+.col-lg h1, .col-lg p {
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
